@@ -1,0 +1,1088 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E5D96903-88A0-4B60-B0A2-A84C94E8AEC5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConectoWorkSpace</RootNamespace>
+    <AssemblyName>Conecto® WorkSpace</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.4.1.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;1.5.1</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Images\ICO\Conecto Workspace.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ConectoWorkSpace.App</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>E8839860E5DE7B4C8B5E16BDCF47F1331A430B5C</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ConectoWorkSpace_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.ShockwaveFlashObjects">
+      <HintPath>..\..\DLL\AxInterop.ShockwaveFlashObjects.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DBConecto, Version=1.1.0.1, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL\DBConecto.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FirebirdSql.Data.FirebirdClient, Version=7.1.1.0, Culture=neutral, PublicKeyToken=3750abcc3150b00c, processorArchitecture=MSIL">
+      <HintPath>..\packages\FirebirdSql.Data.FirebirdClient.7.1.1\lib\net452\FirebirdSql.Data.FirebirdClient.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Hardcodet.Wpf.TaskbarNotification, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Hardcodet.NotifyIcon.Wpf.1.0.8\lib\net451\Hardcodet.Wpf.TaskbarNotification.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.ShockwaveFlashObjects">
+      <HintPath>..\..\DLL\Interop.ShockwaveFlashObjects.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml">
+      <HintPath>..\..\..\..\Program Files (x86)\Microsoft.NET\Primary Interop Assemblies\Microsoft.mshtml.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Npgsql, Version=4.1.1.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.4.1.1\lib\net461\Npgsql.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Automation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Dll\System.Management.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.6.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.4.6.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.4.6.0\lib\net461\System.Text.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.3\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SystemConecto">
+      <HintPath>..\..\DLL\SystemConecto.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="WpfAnimatedGif">
+      <HintPath>..\..\DLL\WpfAnimatedGif.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1С-Export\AppPlayStory_1C.cs" />
+    <Compile Include="1С-Export\Element\configCinaWeb.xaml.cs">
+      <DependentUpon>configCinaWeb.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="1С-Export\Element\configEksportDoc.xaml.cs">
+      <DependentUpon>configEksportDoc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="1С-Export\Element\configImportBank.xaml.cs">
+      <DependentUpon>configImportBank.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="1С-Export\write_peremech_prod.xaml.cs">
+      <DependentUpon>write_peremech_prod.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="1С-Export\write_usl_otel.xaml.cs">
+      <DependentUpon>write_usl_otel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="1С-Export\write_sp_tov.xaml.cs">
+      <DependentUpon>write_sp_tov.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="1С-Export\write_act_real.xaml.cs">
+      <DependentUpon>write_act_real.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="1С-Export\write_act_spis.xaml.cs">
+      <DependentUpon>write_act_spis.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="1С-Export\write_prihod_nakl.xaml.cs">
+      <DependentUpon>write_prihod_nakl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="1С-Export\СExport.xaml.cs">
+      <DependentUpon>СExport.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="2-KassaExport\KassaExport.xaml.cs">
+      <DependentUpon>KassaExport.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="4-TerminalAbonement\AppPlayStory_TerminalAbonement.cs" />
+    <Compile Include="4-TerminalAbonement\TerminalAbonementW.xaml.cs">
+      <DependentUpon>TerminalAbonementW.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="5-RDPConect\AppPlayStory_RDPConect.cs" />
+    <Compile Include="7-Back\AppPlayStory_Back.cs" />
+    <Compile Include="6-Front\AppPlayStory_Front.cs" />
+    <Compile Include="8-AppPlayStory_OtherWork\AppPlayStory_OtherWork.cs" />
+    <Compile Include="Administrator\Admin.xaml.cs">
+      <DependentUpon>Admin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\AdminPanels.xaml.cs">
+      <DependentUpon>AdminPanels.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ServerStation.xaml.cs">
+      <DependentUpon>ServerStation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\write_config_appplay.xaml.cs">
+      <DependentUpon>write_config_appplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\write_config_servers.xaml.cs">
+      <DependentUpon>write_config_servers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AppforWorkSpace.cs" />
+    <Compile Include="Bus\AdminBus.cs" />
+    <Compile Include="CompareBD\CompareEtalon.cs" />
+    <Compile Include="Install\Install.cs" />
+    <Compile Include="Install\InstallB52.cs" />
+    <Compile Include="Install\LibButton.cs" />
+    <Compile Include="Main_Window\WorkSpace.xaml.cs">
+      <DependentUpon>WorkSpace.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ConectoWorkSpaceElements\PalyStory\PalyStory.xaml.cs">
+      <DependentUpon>PalyStory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ConectoWorkSpaceElements\PalyStory\PalyStoryApp.xaml.cs">
+      <DependentUpon>PalyStoryApp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ConectoWorkSpaceElements\PlayVideo.xaml.cs">
+      <DependentUpon>PlayVideo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Config\ConfigServers.cs" />
+    <Compile Include="Config\SystemConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Config\SystemConfigAppPlayStory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Main_Window\FancyPopup.xaml.cs">
+      <DependentUpon>FancyPopup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Window\NotifyIconViewModel.cs" />
+    <Compile Include="Main_Window\PanelWorkSpace.xaml.cs">
+      <DependentUpon>PanelWorkSpace.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Systems\DllWork.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ManualWin.xaml.cs">
+      <DependentUpon>ManualWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="message.cs" />
+    <Compile Include="Servers\SystemConectoSKDServer.cs" />
+    <Compile Include="Servers\SystemConectoTimeServer.cs" />
+    <Compile Include="Servers\SystemConectoServers.cs" />
+    <Compile Include="Servers\KaraokeServer.cs" />
+    <Compile Include="SKD\SKD.xaml.cs">
+      <DependentUpon>SKD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SKD\ZGuard.cs" />
+    <Compile Include="SKD\ZPort.cs" />
+    <Compile Include="Splasher-startWindow\Splasher.cs" />
+    <Compile Include="Splasher-startWindow\SplashScreenCash.xaml.cs">
+      <DependentUpon>SplashScreenCash.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Splasher-startWindow\SplashScreenConecto.xaml.cs">
+      <DependentUpon>SplashScreenConecto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Styles\Test.xaml.cs">
+      <DependentUpon>Test.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Systems\APSDefault.cs" />
+    <Compile Include="Systems\AppStart.cs" />
+    <Compile Include="Systems\HookSystemKeys.cs" />
+    <Compile Include="Systems\Interface.cs" />
+    <Compile Include="Systems\SystemConectoKaraoke.cs" />
+    <Compile Include="Systems\SystemConectoRS_XXX.cs" />
+    <Compile Include="Systems\SystemConectoUserInterfice.cs" />
+    <Compile Include="Systems\SystemConfigAppPlayInstall.cs" />
+    <Compile Include="Systems\SystemConfigSKD.cs" />
+    <Compile Include="Systems\TextPasteWindow.cs" />
+    <Compile Include="Servers\UserServices.cs" />
+    <Compile Include="TaskWindow.xaml.cs">
+      <DependentUpon>TaskWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VideoWin.xaml.cs">
+      <DependentUpon>VideoWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WebBrowserOverlay.xaml.cs">
+      <DependentUpon>WebBrowserOverlay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowConectoWS\Conector.xaml.cs">
+      <DependentUpon>Conector.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowConectoWS\SpecPred.xaml.cs">
+      <DependentUpon>SpecPred.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinMessage.cs" />
+    <Compile Include="WinOblakoNiz.xaml.cs">
+      <DependentUpon>WinOblakoNiz.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WaitFon.xaml.cs">
+      <DependentUpon>WaitFon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinOblakoSetUpdate.xaml.cs">
+      <DependentUpon>WinOblakoSetUpdate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinOblakoVerh.xaml.cs">
+      <DependentUpon>WinOblakoVerh.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Systems\Autiriz.xaml.cs">
+      <DependentUpon>Autiriz.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WaitMessage.xaml.cs">
+      <DependentUpon>WaitMessage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Systems\DevicePC.cs" />
+    <Compile Include="CopyWindT.xaml.cs">
+      <DependentUpon>CopyWindT.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinOblakoLeft.xaml.cs">
+      <DependentUpon>WinOblakoLeft.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinSetAptune.xaml.cs">
+      <DependentUpon>WinSetAptune.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinSetHub.xaml.cs" />
+    <Compile Include="WinSetKey.xaml.cs">
+      <DependentUpon>WinSetKey.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinSetPuth.xaml.cs">
+      <DependentUpon>WinSetPuth.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinSetSpr.xaml.cs">
+      <DependentUpon>WinSetSpr.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinSetTableLog.xaml.cs">
+      <DependentUpon>WinSetTableLog.xaml</DependentUpon>
+    </Compile>
+    <Page Include="1С-Export\Element\configCinaWeb.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="1С-Export\Element\configEksportDoc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="1С-Export\Element\configImportBank.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="1С-Export\write_peremech_prod.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="1С-Export\write_usl_otel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="1С-Export\write_sp_tov.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="1С-Export\write_act_real.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="1С-Export\write_act_spis.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="1С-Export\write_prihod_nakl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="1С-Export\СExport.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="2-KassaExport\KassaExport.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="4-TerminalAbonement\TerminalAbonementW.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Administrator\Admin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Administrator\AdminPanels.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Administrator\ServerStation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Administrator\write_config_appplay.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Administrator\write_config_servers.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Main_Window\WorkSpace.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ConectoWorkSpaceElements\PalyStory\PalyStory.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ConectoWorkSpaceElements\PalyStory\PalyStoryApp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ConectoWorkSpaceElements\PlayVideo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Main_Window\FancyPopup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Main_Window\PanelWorkSpace.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ManualWin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SKD\SKD.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Splasher-startWindow\SplashScreenCash.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Splasher-startWindow\SplashScreenConecto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\StyleSystem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\Test.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TaskWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VideoWin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WebBrowserOverlay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowConectoWS\Conector.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WindowConectoWS\SpecPred.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WinMessage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WinOblakoNiz.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WaitFon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WinOblakoSetUpdate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WinOblakoVerh.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Systems\Autiriz.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WaitMessage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CopyWindT.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WinOblakoLeft.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WinSetAptune.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WinSetHub.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WinSetKey.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WinSetPuth.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WinSetSpr.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WinSetTableLog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ICO\Conecto Workspace.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Клиентский профиль Microsoft .NET Framework 4 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>Клиентский профиль .NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Установщик Windows 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\admin_1b.png" />
+    <Resource Include="Images\keyf.png" />
+    <Resource Include="Images\knop2_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\knop2_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\beck1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\logo_shar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\1366-x-768_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\logo_shar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\knp_zelt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\knp_zelt2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\kabinet_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\kabinet_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\consalt_1.png" />
+    <Resource Include="Images\consalt_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\market_1.png" />
+    <Resource Include="Images\market_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\manual_1.png" />
+    <Resource Include="Images\manual_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\video_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\video_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ico_prog_megaplan1.png" />
+    <Resource Include="Images\ico_prog_megaplan2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\skryt1.png" />
+    <Resource Include="Images\skryt2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\close1.png" />
+    <Resource Include="Images\close2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\4asy2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\4asy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\okno_vyhoda_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\x1.png" />
+    <Resource Include="Images\x2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="component\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\knop1_1.png" />
+    <Resource Include="Images\knop1_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\term_peregr1.png" />
+    <Resource Include="Images\term_peregr2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\vykl1.png" />
+    <Resource Include="Images\vykl2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\conector_smoll_full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ico_prog_office1.png" />
+    <Resource Include="Images\ico_prog_office2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ico_prog_terminal1.png" />
+    <Resource Include="Images\ico_prog_terminal2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\earth1_f.png" />
+    <Resource Include="Images\earth2_f.png" />
+    <Resource Include="Images\earth3_f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cluch_f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\database1.png" />
+    <Resource Include="Images\database2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\podskazka1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\podskazka2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\xrestik_vyity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\yes1.png" />
+    <Resource Include="Images\yes2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\beck2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\knopka0.png" />
+    <Resource Include="Images\knopka0_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pole_vvoda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\xrestik.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\knopka1.png" />
+    <Resource Include="Images\knopka1_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\knopka2.png" />
+    <Resource Include="Images\knopka2_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\knopka3.png" />
+    <Resource Include="Images\knopka3_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\knopka4.png" />
+    <Resource Include="Images\knopka4_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ugol1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ugol4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\storona1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\storona3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ugol2.png" />
+    <Resource Include="Images\ugol3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\knopka5.png" />
+    <Resource Include="Images\knopka5_2.png" />
+    <Resource Include="Images\knopka6.png" />
+    <Resource Include="Images\knopka6_2.png" />
+    <Resource Include="Images\knopka7.png" />
+    <Resource Include="Images\knopka7_2.png" />
+    <Resource Include="Images\knopka8.png" />
+    <Resource Include="Images\knopka8_2.png" />
+    <Resource Include="Images\knopka9.png" />
+    <Resource Include="Images\knopka9_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\krujok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\admin_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\admin_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\linia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\computer-net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\storona22.png" />
+    <Resource Include="Images\storona44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\undo_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\folder_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Edit_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\server1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\server2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\comp1.png" />
+    <Resource Include="Images\comp2.png" />
+    <Resource Include="Images\comp3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\export1.png" />
+    <Resource Include="Images\export2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\manual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\doc1.png" />
+    <Resource Include="Images\doc2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\b52_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\keyboard1.png" />
+    <Resource Include="Images\keyboard2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\folder1.png" />
+    <Resource Include="Images\folder2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\note1.png" />
+    <Resource Include="Images\note2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\jazichok_down1.png" />
+    <Resource Include="Images\jazichok_down2.png" />
+    <Resource Include="Images\jazichok_up1.png" />
+    <Resource Include="Images\jazichok_up2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\calc1.png" />
+    <Resource Include="Images\calc2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\fontask.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\video.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\arrow_left1.png" />
+    <Resource Include="Images\arrow_left2.png" />
+    <Resource Include="Images\arrow_right1.png" />
+    <Resource Include="Images\arrow_right2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\fon_panel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\open_new_window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\video_ico1.png" />
+    <Resource Include="Images\video_ico2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\knop_activ.png" />
+    <Resource Include="Images\knop_ne_activ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\admin_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pole_vvoda_podsvetka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\sinee1.1.png" />
+    <Resource Include="Images\sinee2.png" />
+    <Resource Include="Images\sinee3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pnsys_beloe_okno_levo.png" />
+    <Resource Include="Images\pnsys_beloe_okno_niz.png" />
+    <Resource Include="Images\pnsys_beloe_okno_verh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pnsys_sinee_okno_levo.png" />
+    <Resource Include="Images\pnsys_sinee_okno_verh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\vihod1.png" />
+    <Resource Include="Images\vihod2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pnsys_nastroyka.png" />
+    <Resource Include="Images\pnsys_operaz_sistem.png" />
+    <Resource Include="Images\pnsys_polzovat.png" />
+    <Resource Include="Images\pnsys_set.png" />
+    <Resource Include="Images\pnsys_zeltoe_vydilen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pnsys_administrirov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pnsys_1_1_admin_panel.png" />
+    <Resource Include="Images\pnsys_1_1_command.png" />
+    <Resource Include="Images\pnsys_1_1_disp_zadaz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pnsys_1_1_panel_uprav.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pnsys_1_1_terminal_1.png" />
+    <Resource Include="Images\pnsys_1_1_terminal_2.png" />
+    <Resource Include="Images\pnsys_1_1_terminal_podlojka.png" />
+    <Resource Include="Images\pnsys_1_1_vklvykl1.png" />
+    <Resource Include="Images\pnsys_1_1_vklvykl2.png" />
+    <Resource Include="Images\pnsys_2_1_server.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ico_logo_flagman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pnsys_sinee1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WpfAnimatedGif.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\waitmessage_013.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\wait_podloj_begun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Config\appplay.xml">
+      <SubType>Designer</SubType>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pnsys_1_1_folder_panadm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\progico.ico" />
+    <None Include="1С-Export\Select-for-BD\import_act_spis.sql.fb11.txt" />
+    <None Include="1С-Export\Select-for-BD\import_act_spis.sql.fb1.txt" />
+    <Resource Include="Images\ico_prog_office31.png" />
+    <Resource Include="Images\teamviewer_12.png" />
+    <Resource Include="Images\teamviewer_1.png" />
+    <Resource Include="Images\teamviewer_11.png" />
+    <Resource Include="Images\teamviewer_22483.png" />
+    <Resource Include="Images\podskazka3.png" />
+    <Resource Include="Images\okno_vyhoda_l.png" />
+    <Resource Include="Images\pnsys_1_1_terminal_3.png" />
+    <Resource Include="Images\Diagnoz.png" />
+    <Resource Include="Images\AmmyAdmin.png" />
+    <Resource Include="Images\ticket-purchase.png" />
+    <Resource Include="Images\AnyDesk.png" />
+    <Resource Include="Images\Diagnoz.jpg" />
+    <Resource Include="Images\Aam.png" />
+    <Resource Include="Images\AAdmin.png" />
+    <Resource Include="Images\ico_prog_terminal4.png" />
+    <Resource Include="Images\ico_prog_terminal3.png" />
+    <Resource Include="Images\plus.png" />
+    <Resource Include="Images\index.png" />
+    <Resource Include="Images\eye.png" />
+    <Resource Include="Images\oknoset.png" />
+    <Resource Include="Images\Preferences.png" />
+    <Resource Include="Images\admin_21.png" />
+    <Resource Include="Images\on_off_1.png" />
+    <Resource Include="Images\on_off_2.png" />
+    <Resource Include="Images\on_off_3.png" />
+    <Resource Include="Images\on_off_4.png" />
+    <Resource Include="Images\database.png" />
+    <Resource Include="Images\ConW_fon.png" />
+    <Resource Include="Images\ConC_fon.png" />
+    <Resource Include="Images\server1_R.png" />
+    <Resource Include="Images\server2_R.png" />
+    <Resource Include="Images\ico_terminalabon2.png" />
+    <Resource Include="Images\ico_terminalabon1.png" />
+    <Resource Include="1С-Export\Select-for-BD\old_import_act_realiz.sql.fb.txt">
+      <SubType>Designer</SubType>
+    </Resource>
+    <Content Include="1С-Export\Select-for-BD\import_act_realiz.sql.fb.txt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Resource Include="Images\opcii.png" />
+    <Resource Include="Config\servers.xml">
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="opcii6.png" />
+    <Resource Include="opcii5.png" />
+    <Resource Include="WindowConectoWS\TextFile1.txt" />
+    <Resource Include="Config\configinstallapp.xml" />
+    <Resource Include="2-KassaExport\Image\ico_kassa1.png" />
+    <Resource Include="2-KassaExport\Image\ico_kassa2.png" />
+    <Resource Include="Culture\culture_ru-ru.csv.txt" />
+    <Resource Include="1С-Export\Select-for-BD\import_stv_oborot_otel.sql.fb.txt" />
+    <Resource Include="1С-Export\Select-for-BD\import_act_spis.sql.fb.txt" />
+    <Resource Include="1С-Export\Select-for-BD\import_ptsk.sql.fb.txt" />
+    <Resource Include="1С-Export\Select-for-BD\import_stv.sql.fb.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

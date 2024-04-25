@@ -1,0 +1,28 @@
+Id; Date; Name User; Domen User; Type message; Message
+ Version install Framework 4.8
+
+101; 11.03.2020 22:39:57; NoName; NoDomen; --- Error: ;Необработаное исключение в системе System.ComponentModel.Win32Exception (0x80004005): Недостаточно квот для обработки команды
+   в MS.Win32.UnsafeNativeMethods.PostMessage(HandleRef hwnd, WindowMessage msg, IntPtr wparam, IntPtr lparam)
+   в System.Windows.Interop.HwndTarget.UpdateWindowSettings(Boolean enableRenderTarget, Nullable`1 channelSet)
+   в System.Windows.Interop.HwndTarget.UpdateWindowPos(IntPtr lParam)
+   в System.Windows.Interop.HwndTarget.HandleMessage(WindowMessage msg, IntPtr wparam, IntPtr lparam)
+   в System.Windows.Interop.HwndSource.HwndTargetFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   в System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   в System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler).
+ Система завершила работу
+
+ Version install Framework 4.8
+
+101; 16.03.2020 19:42:10; NoName; NoDomen; --- Error: ;Необработаное исключение в системе System.ComponentModel.Win32Exception (0x80004005): Недостаточно квот для обработки команды
+   в MS.Win32.UnsafeNativeMethods.PostMessage(HandleRef hwnd, WindowMessage msg, IntPtr wparam, IntPtr lparam)
+   в System.Windows.Interop.HwndTarget.UpdateWindowSettings(Boolean enableRenderTarget, Nullable`1 channelSet)
+   в System.Windows.Interop.HwndTarget.UpdateWindowPos(IntPtr lParam)
+   в System.Windows.Interop.HwndTarget.HandleMessage(WindowMessage msg, IntPtr wparam, IntPtr lparam)
+   в System.Windows.Interop.HwndSource.HwndTargetFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   в System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   в System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler).
+ Система завершила работу

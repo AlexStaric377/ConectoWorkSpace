@@ -1,0 +1,8 @@
+select
+a.DAT,a.KOD_GROUP,org,a.NAME_GROUP,sum(a.SUM_NAL) as SUM_NAL, sum(a.SUM_VISA) as sum_visa, sum(a.SUM_BNAL) as sum_bnal,
+COALESCE((select name from spr_org where org=kod),'') as org_name
+  from ALT_HT_PRC_RP_OBS_GRP_1C('{0}','{1}',0) a
+group by a.KOD_GROUP,a.NAME_GROUP,a.dat,org
+order by a.dat,a.NAME_GROUP
+
+

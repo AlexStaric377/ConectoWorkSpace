@@ -1,0 +1,19 @@
+select hd.dat,hd.num, hd.podr ,
+(select name from  spr_podr p where p.kod=hd.PODR ) as podr_name ,
+(select p.org from spr_podr p where  p.kod=hd.podr) as org_our,
+(select o.name from spr_podr p, spr_org o where o.kod=p.org and p.kod=hd.podr) as org_our_name,
+rc.TOV, (select name from spr_tov where kod=tov) as tov_name,
+ rc.DOP_CNT as cnt, rc.DOP_PRICE as priceNds, 
+rc.SUMMA as summaNds, hd.nds,
+ hd.ORG, (select name from spr_org where hd.org=kod) as org_name,
+ hd.type_doc,  (case hd.TYPE_DOC  when 8 then 'Не проеденное списание' else 'Акт списания' end) as type_doc_name,
+(case rc.ED_NAME    when 'кг' then 1   when 'л' then 2   when 'порц' then 3   when 'гр' then 4   when 'мл' then 5  when 'бут' then 6 else 10 end) edId,rc.ED_NAME,
+COALESCE(hd.day_doc,0) as day_doc, (case  COALESCE(hd.day_doc,0) when -1 then 'Автосписание' else 'Списание' end) as day_doc_name
+ from mn_hd_tov_out hd, mn_rc_tov_out rc
+where rc.doc=hd.kod and
+ (CHECKKODENTRY(hd.TYPE_DOC, '3;8;')>0)
+and hd.white=1 and rc.cnt>0
+and (hd.dat between '{0}' and '{1}') 
+and ('{2}'='0' or CHECKKODENTRY(hd.podr,'{2}')>0)
+and ('{3}'='0' or (EXISTS(select p.kod from  spr_podr p where p.kod=hd.PODR  and p.org='{3}') )) 
+order by hd.dat,hd.num,rc.tov

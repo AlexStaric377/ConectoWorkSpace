@@ -1,0 +1,99 @@
+﻿<Window x:Class="ConectoWorkSpace.Autiriz"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Autiriz" WindowState="Normal" Background="Transparent" AllowsTransparency="True" WindowStyle="None"  Name="AutirizW" ShowInTaskbar="False" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Height="659" Width="1140" Margin="0" KeyDown="ConectoW_KeyDown" ResizeMode="NoResize">
+    <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Height="615" Width="1115" Name="WindGrid">
+        <Rectangle Height="60" HorizontalAlignment="Left" Margin="259,150,0,0" Name="TabSpace" VerticalAlignment="Top" Width="353" StrokeThickness="2" Visibility="Visible">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Conecto®%20WorkSpace;component/Images/pole_vvoda_podsvetka.png" />
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image Cursor="Hand" Height="38" Margin="0,38,40,0" Name="Close_" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/xrestik_vyity.png" Stretch="None" VerticalAlignment="Top" MouseLeftButtonDown="Close__MouseLeftButtonDown" HorizontalAlignment="Right" Width="40" />
+        <Label Content="Введите пароль" FontFamily="Calibri" FontSize="24" FontWeight="Bold" Foreground="Black" Height="39" HorizontalAlignment="Left" IsEnabled="True" Margin="266,205,0,0" Name="label_Vvedite" VerticalAlignment="Top" Width="279" />
+        <Image Cursor="Hand" Height="83" HorizontalAlignment="Left" Margin="789,265,0,0" Name="Ok__Click"  Stretch="None" VerticalAlignment="Top" Width="83" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/yes1.png" MouseLeftButtonDown="Ok__Click_MouseLeftButtonDown_1" MouseLeave="Ok__Click_MouseLeave" MouseMove="Ok__Click_MouseMove" />
+        <Image Cursor="Hand" Height="83" HorizontalAlignment="Left" Margin="690,265,0,0" Name="BackClose_" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/beck1.png" Stretch="None" VerticalAlignment="Top" Width="83" MouseLeave="BackClose__MouseLeave" MouseMove="BackClose__MouseMove" MouseLeftButtonDown="BackClose__MouseLeftButtonDown_1" />
+        <Image Cursor="Hand" Height="83" HorizontalAlignment="Left" Margin="266,388,0,0" Name="But0" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/knopka0.png" Stretch="None" VerticalAlignment="Top" Width="83" MouseLeave="But0_MouseLeave" MouseLeftButtonDown="But0_MouseLeftButtonDown" MouseMove="But0_MouseMove" />
+        <Image Cursor="Hand" Height="49" HorizontalAlignment="Left" Margin="266,282,0,0" Name="fonVvodPasswd" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/pole_vvoda.png" Stretch="Fill" VerticalAlignment="Top" Width="338" MouseLeftButtonUp="fonVvodPasswd_MouseLeftButtonUp" />
+        <Image Cursor="Hand" Height="83" HorizontalAlignment="Left" Margin="351,388,0,0" Name="But1" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/knopka1.png" Stretch="None" VerticalAlignment="Top" Width="83" MouseLeave="But1_MouseLeave" MouseMove="But1_MouseMove" MouseLeftButtonDown="But1_MouseLeftButtonDown" />
+        <Image Cursor="Hand" Height="83" HorizontalAlignment="Left" Margin="436,388,0,0" Name="But2" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/knopka2.png" Stretch="None" VerticalAlignment="Top" Width="83" MouseLeave="But2_MouseLeave" MouseMove="But2_MouseMove" MouseLeftButtonDown="But2_MouseLeftButtonDown" />
+        <Image Cursor="Hand" Height="83" HorizontalAlignment="Left" Margin="521,388,0,0" Name="But3" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/knopka3.png" Stretch="None" VerticalAlignment="Top" Width="83" MouseLeave="But3_MouseLeave" MouseMove="But3_MouseMove" MouseLeftButtonDown="But3_MouseLeftButtonDown" />
+        <Image Cursor="Hand" Height="83" HorizontalAlignment="Left" Margin="605,388,0,0" Name="But4" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/knopka4.png" Stretch="None" VerticalAlignment="Top" Width="83" MouseLeave="But4_MouseLeave" MouseMove="But4_MouseMove" MouseLeftButtonDown="But4_MouseLeftButtonDown" />
+        <Image Cursor="Hand" Height="83" HorizontalAlignment="Left" Margin="266,473,0,0" Name="But5" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/knopka5.png" Stretch="None" VerticalAlignment="Top" Width="83" MouseMove="image5_MouseMove" MouseLeave="But5_MouseLeave" MouseLeftButtonDown="But5_MouseLeftButtonDown" />
+        <Image Cursor="Hand" Height="83" HorizontalAlignment="Left" Margin="351,473,0,0" Name="But6" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/knopka6.png" Stretch="None" VerticalAlignment="Top" Width="83" MouseLeave="But6_MouseLeave" MouseMove="But6_MouseMove" MouseLeftButtonDown="But6_MouseLeftButtonDown" />
+        <Image Cursor="Hand" Height="83" HorizontalAlignment="Left" Margin="436,473,0,0" Name="But7" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/knopka7.png" Stretch="None" VerticalAlignment="Top" Width="83" MouseLeave="But7_MouseLeave" MouseMove="But7_MouseMove" MouseLeftButtonDown="But7_MouseLeftButtonDown" />
+        <Image Cursor="Hand" Height="83" HorizontalAlignment="Left" Margin="521,473,0,0" Name="But8" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/knopka8.png" Stretch="None" VerticalAlignment="Top" Width="83" MouseLeave="But8_MouseLeave" MouseMove="But8_MouseMove" MouseLeftButtonDown="But8_MouseLeftButtonDown" />
+        <Image Cursor="Hand" Height="83" HorizontalAlignment="Left" Margin="605,473,0,0" Name="But9" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/knopka9.png" Stretch="None" VerticalAlignment="Top" Width="83" MouseLeave="But9_MouseLeave" MouseMove="But9_MouseMove" MouseLeftButtonDown="But9_MouseLeftButtonDown" />
+        <Image Cursor="Hand" HorizontalAlignment="Left" Margin="560,287,0,0" Name="ClearVvod" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/xrestik.png" Stretch="None" Width="40" MouseLeftButtonDown="ClearVvod_MouseLeftButtonDown" Height="38" VerticalAlignment="Top" />
+        <Image Cursor="Hand" Height="30" HorizontalAlignment="Left" Margin="275,292,0,0" Name="Sim1" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/krujok.png" Stretch="None" VerticalAlignment="Top" Width="30" Visibility="Visible" MouseLeftButtonUp="Sim1_MouseLeftButtonUp" />
+        <Image Cursor="Hand" Height="30" HorizontalAlignment="Left" Margin="306,292,0,0" Name="Sim2" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/krujok.png" Stretch="None" VerticalAlignment="Top" Width="30" Visibility="Visible" MouseLeftButtonUp="Sim2_MouseLeftButtonUp" />
+        <Image Cursor="Hand" Height="30" HorizontalAlignment="Left" Margin="337,292,0,0" Name="Sim3" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/krujok.png" Stretch="None" VerticalAlignment="Top" Width="30" Visibility="Visible" MouseLeftButtonUp="Sim3_MouseLeftButtonUp" />
+        <Image Cursor="Hand" Height="30" HorizontalAlignment="Left" Margin="368,292,0,0" Name="Sim4" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/krujok.png" Stretch="None" VerticalAlignment="Top" Width="30" Visibility="Visible" MouseLeftButtonUp="Sim4_MouseLeftButtonUp" />
+        <Image Cursor="Hand" Height="30" HorizontalAlignment="Left" Margin="399,292,0,0" Name="Sim5" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/krujok.png" Stretch="None" VerticalAlignment="Top" Width="30" Visibility="Visible" MouseLeftButtonUp="Sim5_MouseLeftButtonUp" />
+        <Image Cursor="Hand" Height="30" HorizontalAlignment="Left" Margin="430,292,0,0" Name="Sim6" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/krujok.png" Stretch="None" VerticalAlignment="Top" Width="30" Visibility="Visible" MouseLeftButtonUp="Sim6_MouseLeftButtonUp" />
+        <Image Cursor="Hand" Height="30" HorizontalAlignment="Left" Margin="461,292,0,0" Name="Sim7" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/krujok.png" Stretch="None" VerticalAlignment="Top" Width="30" Visibility="Visible" MouseLeftButtonUp="Sim7_MouseLeftButtonUp" />
+        <Image Cursor="Hand" Height="30" HorizontalAlignment="Left" Margin="492,292,0,0" Name="Sim8" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/krujok.png" Stretch="None" VerticalAlignment="Top" Width="30" Visibility="Visible" MouseLeftButtonUp="Sim8_MouseLeftButtonUp" />
+        <Image Cursor="Hand" Height="30" HorizontalAlignment="Left" Margin="523,292,0,0" Name="Sim9" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/krujok.png" Stretch="None" VerticalAlignment="Top" Visibility="Visible" Width="30" MouseLeftButtonUp="Sim9_MouseLeftButtonUp" />
+        <Image Cursor="Hand" Height="49" HorizontalAlignment="Left" Margin="266,155,0,0" Name="fonVvodLogin" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/pole_vvoda.png" Stretch="Fill" VerticalAlignment="Top" Width="338" Visibility="Visible" MouseLeftButtonUp="fonVvodLogin_MouseLeftButtonUp" />
+        <Image Cursor="Hand" Height="38" HorizontalAlignment="Left" Margin="560,160,0,0" Name="ClearVvodLogin" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/xrestik.png" Stretch="None" VerticalAlignment="Top" Width="40" Visibility="Visible" MouseLeftButtonDown="ClearVvodLogin_MouseLeftButtonDown" />
+        <Label Cursor="Hand" FontFamily="Calibri" FontSize="16" FontWeight="Bold" Height="30" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="275,164,0,0" Name="SimL1" MouseLeftButtonUp="SimL1_MouseLeftButtonUp" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="30" FontStretch="Normal" Visibility="Hidden">
+            <Label.Background>
+                <ImageBrush ImageSource="pack://application:,,,/Conecto®%20WorkSpace;component/Images/krujok.png" />
+            </Label.Background>
+        </Label>
+        <Label Content="Введите имя" FontFamily="Calibri" FontSize="24" FontWeight="Bold" Foreground="Black" Height="39" HorizontalAlignment="Left" IsEnabled="True" Margin="266,112,0,0" Name="label_VvediteI" VerticalAlignment="Top" Width="279" Visibility="Visible" />
+        <TextBlock FontFamily="Calibri" FontSize="12" Foreground="#FFAAB3BE" Margin="924,469,0,0" Name="textBlock1" Text="1995-2013 Студия Плюс." TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Left" Width="179" Height="24" VerticalAlignment="Top" />
+        <TextBlock FontFamily="Calibri" FontSize="12" Foreground="#FFAAB3BE" Height="24" Margin="924,484,0,0" Name="textBlock2" Text="Все права защищены." TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="179" />
+        <TextBlock FontFamily="Calibri" FontSize="12" Foreground="#FFAAB3BE" Height="24" Margin="924,500,0,0" Name="textBlock3" Text="ЦикиновскийП.Я., Борзенко С.В." TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="179" />
+        <TextBlock FontFamily="Calibri" FontSize="14" Foreground="DodgerBlue" Margin="924,424,0,0" Name="Site" Text="www.b52.ua" TextAlignment="Center" TextWrapping="Wrap" FontWeight="Bold" HorizontalAlignment="Left" Width="179" Height="24" VerticalAlignment="Top" />
+        <Image Cursor="Hand" HorizontalAlignment="Left" Margin="266,54,0,0" Name="LogoB52" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/b52_logo.png" Stretch="None" VerticalAlignment="Top" />
+        <Grid HorizontalAlignment="Left" Margin="945,240,0,0" Name="ICOButtAut" VerticalAlignment="Top" Height="140">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="20*" />
+            </Grid.RowDefinitions>
+            <Image Name="ICOButtAut_" Source="pack://application:,,,/Conecto®%20WorkSpace;component/Images/ico_prog_terminal1.png" Stretch="None" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" />
+            <TextBlock Height="18" Name="textPic" Text="TextBlock" VerticalAlignment="Bottom" TextAlignment="Center" FontFamily="Calibri" FontSize="14" Grid.Row="1" FontWeight="Bold" />
+        </Grid>
+        <Label Cursor="Hand" FontFamily="Calibri" FontSize="16" FontStretch="Normal" FontWeight="Bold" Height="30" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="306,164,0,0" Name="SimL2" MouseLeftButtonUp="SimL2_MouseLeftButtonUp" VerticalAlignment="Top" VerticalContentAlignment="Center" Visibility="Hidden" Width="30">
+            <Label.Background>
+                <ImageBrush ImageSource="pack://application:,,,/Conecto®%20WorkSpace;component/Images/krujok.png" />
+            </Label.Background>
+        </Label>
+        <Label Cursor="Hand" FontFamily="Calibri" FontSize="16" FontStretch="Normal" FontWeight="Bold" Height="30" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="337,164,0,0" Name="SimL3" MouseLeftButtonUp="SimL3_MouseLeftButtonUp" VerticalAlignment="Top" VerticalContentAlignment="Center" Visibility="Hidden" Width="30">
+            <Label.Background>
+                <ImageBrush ImageSource="pack://application:,,,/Conecto®%20WorkSpace;component/Images/krujok.png" />
+            </Label.Background>
+        </Label>
+        <Label Cursor="Hand" FontFamily="Calibri" FontSize="16" FontStretch="Normal" FontWeight="Bold" Height="30" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="368,164,0,0" Name="SimL4" MouseLeftButtonUp="SimL4_MouseLeftButtonUp" VerticalAlignment="Top" VerticalContentAlignment="Center" Visibility="Hidden" Width="30">
+            <Label.Background>
+                <ImageBrush ImageSource="pack://application:,,,/Conecto®%20WorkSpace;component/Images/krujok.png" />
+            </Label.Background>
+        </Label>
+        <Label Cursor="Hand" FontFamily="Calibri" FontSize="16" FontStretch="Normal" FontWeight="Bold" Height="30" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="399,164,0,0" Name="SimL5" MouseLeftButtonUp="SimL5_MouseLeftButtonUp" VerticalAlignment="Top" VerticalContentAlignment="Center" Visibility="Hidden" Width="30">
+            <Label.Background>
+                <ImageBrush ImageSource="pack://application:,,,/Conecto®%20WorkSpace;component/Images/krujok.png" />
+            </Label.Background>
+        </Label>
+        <Label Cursor="Hand" FontFamily="Calibri" FontSize="16" FontStretch="Normal" FontWeight="Bold" Height="30" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="430,164,0,0" Name="SimL6" MouseLeftButtonUp="SimL6_MouseLeftButtonUp" VerticalAlignment="Top" VerticalContentAlignment="Center" Visibility="Hidden" Width="30">
+            <Label.Background>
+                <ImageBrush ImageSource="pack://application:,,,/Conecto®%20WorkSpace;component/Images/krujok.png" />
+            </Label.Background>
+        </Label>
+        <Label Cursor="Hand" FontFamily="Calibri" FontSize="16" FontStretch="Normal" FontWeight="Bold" Height="30" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="461,164,0,0" Name="SimL7" MouseLeftButtonUp="SimL7_MouseLeftButtonUp" VerticalAlignment="Top" VerticalContentAlignment="Center" Visibility="Hidden" Width="30">
+            <Label.Background>
+                <ImageBrush ImageSource="pack://application:,,,/Conecto®%20WorkSpace;component/Images/krujok.png" />
+            </Label.Background>
+        </Label>
+        <Label Cursor="Hand" FontFamily="Calibri" FontSize="16" FontStretch="Normal" FontWeight="Bold" Height="30" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="492,164,0,0" Name="SimL8" MouseLeftButtonUp="SimL8_MouseLeftButtonUp" VerticalAlignment="Top" VerticalContentAlignment="Center" Visibility="Hidden" Width="30">
+            <Label.Background>
+                <ImageBrush ImageSource="pack://application:,,,/Conecto®%20WorkSpace;component/Images/krujok.png" />
+            </Label.Background>
+        </Label>
+        <Label Cursor="Hand" FontFamily="Calibri" FontSize="16" FontStretch="Normal" FontWeight="Bold" Height="30" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="523,164,0,0" Name="SimL9" MouseLeftButtonUp="SimL9_MouseLeftButtonUp" VerticalAlignment="Top" VerticalContentAlignment="Center" Visibility="Hidden" Width="30">
+            <Label.Background>
+                <ImageBrush ImageSource="pack://application:,,,/Conecto®%20WorkSpace;component/Images/krujok.png" />
+            </Label.Background>
+        </Label>
+        <TextBlock x:Name="label_nopass" Text="Неверный пароль" VerticalAlignment="Top" FontFamily="Calibri" FontSize="20" FontWeight="Bold" Margin="271,341,0,0" Foreground="#FFFF1D00" HorizontalAlignment="Left" Width="400" TextWrapping="Wrap" />
+    </Grid>
+</Window>

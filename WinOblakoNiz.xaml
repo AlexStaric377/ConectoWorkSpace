@@ -1,0 +1,25 @@
+﻿<Window x:Class="ConectoWorkSpace.WinOblakoNiz"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WinOblakoNiz" WindowState="Normal" AllowsTransparency="True" WindowStyle="None"  Name="WinOblakoNizW" ShowInTaskbar="False" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Height="238" Width="322" Margin="0" Background="{x:Null}" KeyDown="ConectoW_KeyDown" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+    <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Height="200" Width="299" Name="WinGrid">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Conecto®%20WorkSpace;component/Images/okno_vyhoda_s.png" />
+        </Grid.Background>
+        <TextBlock TextAlignment="Center" FontFamily="Calibri" FontSize="16" Height="44" Margin="45,71,44,0" Name="textBlock1" Text="" VerticalAlignment="Top" TextWrapping="Wrap" >
+            Вы действительно хотите 
+            завершить работу?
+        </TextBlock>
+        <Label VerticalContentAlignment="Center" HorizontalContentAlignment="Center"  Content="ДА"  Height="33" HorizontalAlignment="Left" Margin="45,126,0,0" Name="Ok_But" VerticalAlignment="Top" Width="92" FontFamily="Calibri" FontSize="15" FontWeight="Bold" Cursor="Hand" MouseLeave="Ok_But_MouseLeave" MouseMove="Ok_But_MouseMove" MouseLeftButtonDown="Ok_But_MouseLeftButtonDown" >
+            <Label.Background>
+                <ImageBrush ImageSource="pack://application:,,,/Conecto® WorkSpace;component/Images/knp_zelt1.png" Stretch="Uniform" TileMode="None" />
+            </Label.Background>
+        </Label>
+        <Label Content="НЕТ" Cursor="Hand" FontFamily="Calibri" FontSize="15" FontWeight="Bold" Height="33" HorizontalContentAlignment="Center" Margin="163,126,0,0" Name="Close_But" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="92" IsEnabled="True" MouseMove="Close_But_MouseMove" MouseLeftButtonDown="Close_F_MouseLeftButtonDown" MouseLeave="Close_But_MouseLeave">
+            <Label.Background>
+                <ImageBrush ImageSource="pack://application:,,,/Conecto® WorkSpace;component/Images/knp_zelt1.png" Stretch="Uniform" TileMode="None" />
+            </Label.Background>
+        </Label>
+        <Image Height="22" HorizontalAlignment="Left" Margin="248,50,0,0" Name="Close_F" Stretch="None" VerticalAlignment="Top" Width="22" Source="pack://application:,,,/Conecto® WorkSpace;component/Images/x1.png" MouseLeftButtonDown="Close_F_MouseLeftButtonDown" Cursor="Hand" MouseMove="Close_F_MouseMove" MouseLeave="Close_F_MouseLeave" />
+    </Grid>
+</Window>

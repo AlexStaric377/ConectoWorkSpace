@@ -1,0 +1,32 @@
+﻿<Window x:Class="ConectoWorkSpace.WinSetKey"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConectoWorkSpace.Administrator"
+        xmlns:col="clr-namespace:System.Collections;assembly=mscorlib"
+        xmlns:core="clr-namespace:System;assembly=mscorlib"
+        Title="WinSetKey" WindowState="Normal" AllowsTransparency="True" WindowStyle="None"
+        Name="WinSetKeyW" ShowInTaskbar="False" mc:Ignorable="d"   Height="240" Width="600" Margin="0"
+        Background="{x:Null}" KeyDown="ConectoW_KeyDown" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+    <Window.Resources>
+        <Style x:Key="GridCentrAll" TargetType="DataGridColumnHeader">
+            <Setter Property="Thumb.HorizontalContentAlignment" Value="Center" />
+        </Style>
+    </Window.Resources>
+    <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Height="240" Width="600" Name="WinGrid" Background="#FFC7C7C4" >
+        <Label  Content="Таблица БД доступных к соединению с серевром" x:Name="NameAdresPort_Copy12" Margin="18,5,0,0" FontFamily="Calibri" FontSize="18" FontWeight="Normal" Foreground="Black" Height="30" HorizontalContentAlignment="Left" IsEnabled="True"   VerticalAlignment="Top" HorizontalAlignment="Left" Width="394" />
+        <DataGrid  Name="GridBackFront" IsReadOnly="True" AutoGenerateColumns="False" ColumnHeaderStyle="{StaticResource GridCentrAll}"   HorizontalAlignment="Left" Height="175" VerticalAlignment="Top" Width="550"  Loaded="SelectBackFront_Loaded" MouseUp="SelectBackFront_MouseUp" GridLinesVisibility ="All" HorizontalGridLinesBrush ="Black" VerticalGridLinesBrush ="Black" Margin="25,40,0,0" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Тип" Binding="{Binding  Path = Type}" Width="60" />
+                <DataGridTextColumn Header="Имя" Binding="{Binding  Path = Name}" Width="90" />
+                <DataGridTextColumn Header="Сервер" Binding="{Binding  Path = Server}" Width="80" />
+                <DataGridTextColumn Header="Соединение" Binding="{Binding  Path = Conect}" Width="150" />
+                <DataGridTextColumn Header="Путь" Binding="{Binding  Path = Puth}" Width="150" />
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <Image Height="37" HorizontalAlignment="Left" Margin="559,0,0,0" Name="Close_Grid" Stretch="None" VerticalAlignment="Top" Width="40" Source="pack://application:,,,/Conecto® WorkSpace;component/Images/xrestik_vyity.png" MouseLeftButtonDown="Close_Grid_MouseLeftButtonDown" Cursor="Hand"  />
+ 
+    </Grid>
+</Window>

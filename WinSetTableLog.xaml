@@ -1,0 +1,27 @@
+﻿<Window x:Class="ConectoWorkSpace.WinSetTableLog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConectoWorkSpace.Administrator"
+        xmlns:col="clr-namespace:System.Collections;assembly=mscorlib"
+        xmlns:core="clr-namespace:System;assembly=mscorlib"
+        Title="WinSetTableLog" WindowState="Normal" AllowsTransparency="True" WindowStyle="None"
+        Name="WinSetTableLogW" ShowInTaskbar="False" mc:Ignorable="d"   Height="277.177" Width="220" Margin="0"
+        Background="{x:Null}" KeyDown="ConectoW_KeyDown" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+    <Window.Resources>
+        <Style x:Key="GridCentrAll" TargetType="DataGridColumnHeader">
+            <Setter Property="Thumb.HorizontalContentAlignment" Value="Center" />
+        </Style>
+    </Window.Resources>
+    <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Height="277" Width="220" Name="WinGrid" Background="#FFC7C7C4" Margin="0,0,-1,0" >
+        <Label  Content="Список имён таблиц" x:Name="NameAdresPort_Copy12" Margin="12,5,0,0" FontFamily="Calibri" FontSize="16" FontWeight="Normal" Foreground="Black" Height="30" HorizontalContentAlignment="Left" IsEnabled="True"   VerticalAlignment="Top" HorizontalAlignment="Left" Width="149" />
+        <DataGrid  Name="TablLog" IsReadOnly="True" AutoGenerateColumns="False" ColumnHeaderStyle="{StaticResource GridCentrAll}" Height="231" VerticalAlignment="Top"  Loaded="DateTableLog_Loaded" MouseUp="GridTableLog_MouseUp" GridLinesVisibility ="All" HorizontalGridLinesBrush ="Black" VerticalGridLinesBrush ="Black" Margin="11,36,13,0" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Имя таблицы" Binding="{Binding Path=TableName}" Width="170" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Image Height="37" HorizontalAlignment="Left" Margin="180,-1,0,0" Name="Close_Grid" Stretch="None" VerticalAlignment="Top" Width="40" Source="pack://application:,,,/Conecto® WorkSpace;component/Images/xrestik_vyity.png" MouseLeftButtonDown="Close_Grid_MouseLeftButtonDown" Cursor="Hand"  />
+
+    </Grid>
+</Window>

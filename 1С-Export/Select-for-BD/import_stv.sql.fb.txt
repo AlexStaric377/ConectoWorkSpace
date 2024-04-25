@@ -1,0 +1,8 @@
+select t.kod, t.name,(case ed  when 'кг' then 1   when 'л' then 2   when 'порц' then 3   when 'гр' then 4   when 'мл' then 5   when 'бут' then 6 else 10 end) as edId,
+ t.ed from spr_tov t
+where  not exists (select kod from mn_hd_norm hd where tov=t.KOD) and
+exists (select g.kod from  spr_group g where g.kod=t.grp and g.podr in({2}) ) and
+ed<>'-'  and (POSITION(ed in 'порц')=0) and substr(name,1,1)<>' '
+order by name
+
+

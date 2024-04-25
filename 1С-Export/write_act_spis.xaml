@@ -1,0 +1,88 @@
+﻿<UserControl x:Class="ConectoWorkSpace._1С_Export.write_act_spis"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" Loaded="OnInit">
+    <!-- Привязки команд примеры -->
+    <UserControl.CommandBindings>
+        <!-- Названия стандартных команд и события на вызове -->
+        <!--<CommandBinding Command="New" Executed="NewCommandBinding_Executed" />-->
+        <!-- CanExecute указывает на метод, проверяющий условие доступности
+        команды -->
+        <!--<CommandBinding Command="Save" CanExecute="SaveCommandBinding_CanExecute"
+                        Executed="SaveCommandBinding_Executed" />-->
+    </UserControl.CommandBindings>
+
+    <DockPanel LastChildFill="True"  >
+            <!-- LastChildFill - возможность заполнения свободной области последним
+        дочерним элементом -->
+        <Menu DockPanel.Dock="Top" HorizontalAlignment="Left" Name="menu1_act_spis" 
+              VerticalAlignment="Top" Width="Auto" Height="20" Background="White" Margin="0,10,0,0">
+            <MenuItem Header="Cохранить запрос"  Click="Toolb_act_spis_Click" FontWeight="Bold"  FontSize="14" FontFamily="Myriad Pro">
+            </MenuItem>
+            <MenuItem Header="Схемы" FontFamily="Myriad Pro" FontSize="14" FontWeight="Bold" >
+            </MenuItem>
+        </Menu>
+            <!-- Текстовое поле -->
+        <RichTextBox Name="infoGrid1" Width="Auto" DockPanel.Dock="Top" IsReadOnly="True" BorderThickness="0" FontFamily="Myriad Pro" Margin="0,5,0,5">
+            <FlowDocument>
+                <Paragraph>
+                    Наименования колонок для файла:
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <DockPanel>
+            <DataGrid DockPanel.Dock="Top"
+          x:Name="grid1"
+          Margin="5"
+          Height="63"
+          
+          AutoGenerateColumns="True"
+          Width="Auto"
+          ItemsSource="{Binding Path=ColumnQuery,  UpdateSourceTrigger=PropertyChanged, NotifyOnTargetUpdated=True}" GridLinesVisibility="None" BorderThickness="0,1,0,0" 
+                    CanUserAddRows ="False" 
+                    CanUserDeleteRows="False" 
+                    CanUserSortColumns="False" Background="White" 
+                      RowEditEnding="EndEditRowColumnQuery"
+                    />
+            <RichTextBox Name="infoGridQuery" Width="Auto" DockPanel.Dock="Top" IsReadOnly="True" BorderThickness="0" FontFamily="Myriad Pro" Margin="0,5,0,5">
+                <FlowDocument>
+                    <Paragraph>
+                        Результат выполнения запроса:
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox>
+            <DataGrid DockPanel.Dock="Top"
+          x:Name="gridQuery"
+          Margin="5"
+          Height="103"
+          
+          AutoGenerateColumns="True"
+          Width="Auto"
+          ItemsSource="{Binding Path=Query,  Mode=TwoWay, NotifyOnTargetUpdated=True}" GridLinesVisibility="None" BorderThickness="0,1,0,0" 
+                    CanUserAddRows ="False" 
+                    CanUserDeleteRows="False" 
+                    CanUserSortColumns="False" Background="White" 
+                    
+                    />
+            <RichTextBox Name="infoText_act_spis" Width="Auto" Margin="0,15,0,5" DockPanel.Dock="Top" IsReadOnly="True" BorderThickness="0" FontFamily="Myriad Pro" >
+                <FlowDocument>
+                    <Paragraph>
+                        <Bold>Текст запроса:</Bold> параметры:
+                        <Bold>{0}</Bold> - дата с;
+                        <Bold>{1}</Bold> - дата по;
+                        <Bold>{2}</Bold> - подразделение компании
+                        <Bold>{3}</Bold> - организация (поставщик, клиент)
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox>
+            <!-- Текстовое поле -->
+            <RichTextBox Height="Auto" Name="rtxtText_act_spis" Width="Auto" VerticalScrollBarVisibility="Visible" Margin="0,5,0,0" />
+
+        </DockPanel>        
+        
+      </DockPanel>
+
+</UserControl>

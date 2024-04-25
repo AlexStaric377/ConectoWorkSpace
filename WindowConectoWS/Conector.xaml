@@ -1,0 +1,27 @@
+﻿<Window x:Class="ConectoWorkSpace.Conector"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Conector" Height="653" Width="353" WindowState="Normal" Background="Transparent" AllowsTransparency="True" WindowStyle="None" Name="ConectorW" ShowInTaskbar="False" KeyDown="ConectorW_KeyDown" ResizeMode="NoResize" Left="0" Top="0" HorizontalAlignment="Left" VerticalAlignment="Top">
+    <Grid Height="611" Width="329">
+        <Image Height="611" HorizontalAlignment="Left" Name="ConectorI" Source="pack://application:,,,/Conecto® WorkSpace;component/Images/conector_smoll_full.png" Stretch="None" VerticalAlignment="Top" Width="329" ImageFailed="ConectorI_ImageFailed" />
+        <Image Cursor="Hand" Height="20" HorizontalAlignment="Left" Margin="277,46,0,0" Name="Close_F" Source="/Conecto®%20WorkSpace;component/Images/knop2_1.png" Stretch="None" VerticalAlignment="Top" Width="20" MouseLeave="Close_F_MouseLeave" MouseLeftButtonDown="Close_F_MouseLeftButtonDown" MouseMove="Close_F_MouseMove" />
+        <Image Cursor="Hand" Height="97" HorizontalAlignment="Left" Margin="65,401,0,0" Name="RezetPC" Source="pack://application:,,,/Conecto® WorkSpace;component/Images/term_peregr1.png" Stretch="None" StretchDirection="Both" VerticalAlignment="Top" Width="86" MouseMove="RezetPC_MouseMove" MouseLeftButtonDown="RezetPC_MouseLeftButtonDown" MouseLeave="RezetPC_MouseLeave" />
+        <Image Cursor="Hand" Height="97" HorizontalAlignment="Left" Margin="178,401,0,0" Name="PowerOff" Source="pack://application:,,,/Conecto® WorkSpace;component/Images/vykl1.png" Stretch="None" StretchDirection="Both" VerticalAlignment="Top" Width="86" MouseLeave="PowerOff_MouseLeave" MouseLeftButtonDown="PowerOff_MouseLeftButtonDown" MouseMove="PowerOff_MouseMove" />
+        <Rectangle Height="69" HorizontalAlignment="Left" Margin="32,75,0,0" Name="SitePanel" Stroke="{x:Null}" VerticalAlignment="Top" Width="265" Cursor="Hand" OpacityMask="{x:Null}" MouseLeftButtonDown="SitePanel_MouseLeftButtonDown">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                    <GradientStop Color="Black" Offset="0" />
+                    <GradientStop Color="Transparent" Offset="0" />
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Ellipse Height="75" HorizontalAlignment="Left" Margin="134,536,0,0" Name="Butt_Conector" Stroke="{x:Null}" VerticalAlignment="Top" Width="67" MouseLeftButtonDown="Butt_Conector_MouseLeftButtonDown" Cursor="Hand" MouseLeftButtonUp="Butt_Conector_MouseLeftButtonUp">
+            <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                    <GradientStop Color="Black" Offset="0" />
+                    <GradientStop Color="Transparent" Offset="0" />
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+    </Grid>
+</Window>

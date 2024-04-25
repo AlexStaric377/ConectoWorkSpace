@@ -1,0 +1,9 @@
+select hd.POST, hd.PODR, hd.DAT, hd.NUM, hd.SUMMA,hd.TYPE_NDS, hd.NDS,  hd.SOTR,
+ hd.TYPE_DOC, hd.TYPE_PRICE, hd.DOC_STATE, hd.ORG_FROM,  hd.TIME_OPEN,   hd.WHITE,
+ rc.TOV, rc.CNT, rc.DOP_CNT, rc.ED, rc.ED_NAME, rc.PRICE, rc.DOP_PRICE, rc.SUMMA, rc.ORIGIN_PRICE, 
+ hd.PRIM  
+ from MN_HD_TOV_MOVE hd, mn_rc_tov_move rc 
+ where rc.doc=hd.KOD  
+ and (hd.dat between '{0}' and '{1}')
+ and ('{2}'='0' or CHECKKODENTRY(hd.podr,'{2}')>0)
+ order by hd.dat

@@ -1,0 +1,25 @@
+select
+(select first 1 f1.id from FISC_JOURNAL f1 where f1.oper='Z'
+and CASH_PRINT_TIME<=f1.OPER_TIME order by oper_time) as id_z,
+(select first 1 f1.oper_time from FISC_JOURNAL f1 where f1.oper='Z'
+and CASH_PRINT_TIME<=f1.OPER_TIME order by oper_time) as z_opertime,
+CASH_PRINT_TIME,
+dat,
+num,
+PODR_KOD as podr ,
+(select name from spr_podr p where p.kod=PODR_KOD ) as podr_name ,
+(select p.org from spr_podr p where p.kod=PODR_KOD) as org_our,
+(select o.name from spr_podr p, spr_org o where o.kod=p.org and p.kod=PODR_KOD) as org_our_name,
+
+TOV, (select name from spr_tov where kod=tov) as tov_name,
+CNT,
+prc.PRICE_OUT as priceNds,
+SUM_out as summaNds,
+20 nds,
+ORG, (select name from spr_org where org=kod) as org_name,
+6 type_doc, (case 6 when 1 then 'Реализация' when 2 then 'Отгрузка' else 'Чек' end) as type_doc_name,
+(case ed when 'кг' then 1 when 'л' then 2 when 'порц' then 3 when 'гр' then 4 when 'мл' then 5 when 'бут' then 6 else 10 end) edId,
+ed as ED_NAME,
+TYPE_OPL as type_slip, (case TYPE_OPL when 2 then 'Безналичная' when 3 then 'Клубная система' when 4 then 'Кредитная карта' else 'Наличная' end ) as type_slip_name
+from ALT_PRC_RP_REALIZE_PODR_('{0}','{1}',1,0, 0,0,0,'0','0','0',0) prc
+order by 1,dat,num,tov

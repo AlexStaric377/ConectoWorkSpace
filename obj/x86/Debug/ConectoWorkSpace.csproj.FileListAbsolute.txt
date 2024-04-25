@@ -1,0 +1,141 @@
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\ConectoWorkSpace.csprojAssemblyReference.cache
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Interop.IWshRuntimeLibrary.dll
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\ConectoWorkSpace.csproj.ResolveComReference.cache
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\1С-Export\Element\configCinaWeb.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\1С-Export\Element\configEksportDoc.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\1С-Export\Element\configImportBank.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\1С-Export\write_peremech_prod.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\1С-Export\write_usl_otel.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\1С-Export\write_sp_tov.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\1С-Export\write_act_real.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\1С-Export\write_act_spis.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\1С-Export\write_prihod_nakl.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\2-KassaExport\KassaExport.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\4-TerminalAbonement\TerminalAbonementW.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Administrator\Admin.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Administrator\write_config_appplay.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Administrator\write_config_servers.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\App.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\ConectoWorkSpaceElements\PalyStory\PalyStory.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\ConectoWorkSpaceElements\PalyStory\PalyStoryApp.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\ConectoWorkSpaceElements\PlayVideo.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Main_Window\FancyPopup.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\ManualWin.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\SKD\SKD.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Styles\Test.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\TaskWindow.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\VideoWin.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WebBrowserOverlay.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WindowConectoWS\Conector.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WindowConectoWS\SpecPred.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WinMessage.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WinOblakoNiz.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WaitFon.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WinOblakoSetUpdate.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WinOblakoVerh.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Systems\Autiriz.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WaitMessage.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\CopyWindT.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WinOblakoLeft.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WinSetPuth.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\1С-Export\Element\configCinaWeb.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\1С-Export\Element\configEksportDoc.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\1С-Export\Element\configImportBank.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\1С-Export\write_peremech_prod.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\1С-Export\write_usl_otel.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\1С-Export\write_sp_tov.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\1С-Export\write_act_real.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\1С-Export\write_act_spis.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\1С-Export\write_prihod_nakl.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\1С-Export\СExport.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\2-KassaExport\KassaExport.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\4-TerminalAbonement\TerminalAbonementW.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Administrator\Admin.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Administrator\AdminPanels.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Administrator\ServerStation.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Administrator\write_config_appplay.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Administrator\write_config_servers.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\App.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\ConectoWorkSpaceElements\PalyStory\PalyStory.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\ConectoWorkSpaceElements\PalyStory\PalyStoryApp.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\ConectoWorkSpaceElements\PlayVideo.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Main_Window\FancyPopup.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\ManualWin.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\SKD\SKD.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Splasher-startWindow\SplashScreenCash.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Splasher-startWindow\SplashScreenConecto.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Styles\Test.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\TaskWindow.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\VideoWin.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WebBrowserOverlay.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WindowConectoWS\Conector.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WindowConectoWS\SpecPred.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WinMessage.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WinOblakoNiz.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WaitFon.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WinOblakoSetUpdate.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WinOblakoVerh.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Systems\Autiriz.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WaitMessage.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\CopyWindT.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WinOblakoLeft.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WinSetAptune.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WinSetHub.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WinSetKey.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WinSetPuth.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WinSetSpr.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WinSetTableLog.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Conecto® WorkSpace_Content.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Conecto® WorkSpace_MarkupCompile.cache
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Conecto® WorkSpace_MarkupCompile.lref
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\1С-Export\СExport.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Administrator\AdminPanels.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Administrator\ServerStation.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Splasher-startWindow\SplashScreenCash.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Splasher-startWindow\SplashScreenConecto.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Styles\StyleSystem.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WinSetAptune.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WinSetHub.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WinSetKey.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WinSetSpr.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\WinSetTableLog.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Conecto® WorkSpace.g.resources
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\ConectoWorkSpace.Properties.Resources.resources
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\ConectoWorkSpace.csproj.GenerateResource.cache
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Conecto® WorkSpace.TrustInfo.xml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Conecto® WorkSpace.exe.manifest
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Conecto® WorkSpace.exe
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Conecto® WorkSpace.pdb
+D:\Project\AltWorkSpace\ConectoWorkSpace\bin\Debug\Conecto® WorkSpace.exe.config
+D:\Project\AltWorkSpace\ConectoWorkSpace\bin\Debug\Conecto® WorkSpace.exe.manifest
+D:\Project\AltWorkSpace\ConectoWorkSpace\bin\Debug\Conecto® WorkSpace.application
+D:\Project\AltWorkSpace\ConectoWorkSpace\bin\Debug\Conecto® WorkSpace.exe
+D:\Project\AltWorkSpace\ConectoWorkSpace\bin\Debug\Conecto® WorkSpace.pdb
+D:\Project\AltWorkSpace\ConectoWorkSpace\bin\Debug\System.Data.Common.dll
+D:\Project\AltWorkSpace\ConectoWorkSpace\bin\Debug\System.Diagnostics.StackTrace.dll
+D:\Project\AltWorkSpace\ConectoWorkSpace\bin\Debug\System.Diagnostics.Tracing.dll
+D:\Project\AltWorkSpace\ConectoWorkSpace\bin\Debug\System.Globalization.Extensions.dll
+D:\Project\AltWorkSpace\ConectoWorkSpace\bin\Debug\System.IO.Compression.dll
+D:\Project\AltWorkSpace\ConectoWorkSpace\bin\Debug\System.Net.Http.dll
+D:\Project\AltWorkSpace\ConectoWorkSpace\bin\Debug\System.Net.Sockets.dll
+D:\Project\AltWorkSpace\ConectoWorkSpace\bin\Debug\System.Runtime.Serialization.Primitives.dll
+D:\Project\AltWorkSpace\ConectoWorkSpace\bin\Debug\System.Security.Cryptography.Algorithms.dll
+D:\Project\AltWorkSpace\ConectoWorkSpace\bin\Debug\System.Security.SecureString.dll
+D:\Project\AltWorkSpace\ConectoWorkSpace\bin\Debug\System.Threading.Overlapped.dll
+D:\Project\AltWorkSpace\ConectoWorkSpace\bin\Debug\System.Xml.XPath.XDocument.dll
+D:\Project\AltWorkSpace\ConectoWorkSpace\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Project\AltWorkSpace\ConectoWorkSpace\bin\Debug\System.Buffers.dll
+D:\Project\AltWorkSpace\ConectoWorkSpace\bin\Debug\System.Management.Automation.dll
+D:\Project\AltWorkSpace\ConectoWorkSpace\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Project\AltWorkSpace\ConectoWorkSpace\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Project\AltWorkSpace\ConectoWorkSpace\bin\Debug\System.Buffers.xml
+D:\Project\AltWorkSpace\ConectoWorkSpace\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Conecto® WorkSpace.application
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\ConectoWorkSpace.csproj.CopyComplete
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Main_Window\WorkSpace.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Main_Window\WorkSpace.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Main_Window\PanelWorkSpace.g.cs
+D:\Project\AltWorkSpace\ConectoWorkSpace\bin\Debug\SystemConecto.dll
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\Main_Window\PanelWorkSpace.baml
+D:\Project\AltWorkSpace\ConectoWorkSpace\obj\x86\Debug\ConectoWorkSpace.csproj.CoreCompileInputs.cache
